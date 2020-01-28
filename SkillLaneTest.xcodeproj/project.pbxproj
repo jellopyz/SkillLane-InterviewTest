@@ -13,9 +13,13 @@
 		C3E56F0D23DFD24F00D1DC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E56F0B23DFD24F00D1DC43 /* Main.storyboard */; };
 		C3E56F0F23DFD25000D1DC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E56F0E23DFD25000D1DC43 /* Assets.xcassets */; };
 		C3E56F1223DFD25000D1DC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E56F1023DFD25000D1DC43 /* LaunchScreen.storyboard */; };
+		F1946E607D324CA0BE508D66 /* Pods_SkillLaneTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96258105A43B147D32C32F21 /* Pods_SkillLaneTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CF7489650F1B5CAE3CF696D /* Pods-SkillLaneTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillLaneTest.debug.xcconfig"; path = "Target Support Files/Pods-SkillLaneTest/Pods-SkillLaneTest.debug.xcconfig"; sourceTree = "<group>"; };
+		2CFFDE5CFB0B76AE8699624F /* Pods-SkillLaneTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkillLaneTest.release.xcconfig"; path = "Target Support Files/Pods-SkillLaneTest/Pods-SkillLaneTest.release.xcconfig"; sourceTree = "<group>"; };
+		96258105A43B147D32C32F21 /* Pods_SkillLaneTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkillLaneTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E56F0223DFD24F00D1DC43 /* SkillLaneTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkillLaneTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E56F0523DFD24F00D1DC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3E56F0723DFD24F00D1DC43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1946E607D324CA0BE508D66 /* Pods_SkillLaneTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97579B9AD4933B3E8506A0B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96258105A43B147D32C32F21 /* Pods_SkillLaneTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3E56EF923DFD24F00D1DC43 = {
 			isa = PBXGroup;
 			children = (
 				C3E56F0423DFD24F00D1DC43 /* SkillLaneTest */,
 				C3E56F0323DFD24F00D1DC43 /* Products */,
+				E206F83AA6D67E0176B57E1F /* Pods */,
+				97579B9AD4933B3E8506A0B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = SkillLaneTest;
 			sourceTree = "<group>";
 		};
+		E206F83AA6D67E0176B57E1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CF7489650F1B5CAE3CF696D /* Pods-SkillLaneTest.debug.xcconfig */,
+				2CFFDE5CFB0B76AE8699624F /* Pods-SkillLaneTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3E56F1623DFD25000D1DC43 /* Build configuration list for PBXNativeTarget "SkillLaneTest" */;
 			buildPhases = (
+				AEDFDFACD6FD520260149936 /* [CP] Check Pods Manifest.lock */,
 				C3E56EFE23DFD24F00D1DC43 /* Sources */,
 				C3E56EFF23DFD24F00D1DC43 /* Frameworks */,
 				C3E56F0023DFD24F00D1DC43 /* Resources */,
+				A648929090F37C6BAE97A4ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A648929090F37C6BAE97A4ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkillLaneTest/Pods-SkillLaneTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkillLaneTest/Pods-SkillLaneTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkillLaneTest/Pods-SkillLaneTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEDFDFACD6FD520260149936 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkillLaneTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3E56EFE23DFD24F00D1DC43 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		C3E56F1723DFD25000D1DC43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF7489650F1B5CAE3CF696D /* Pods-SkillLaneTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		C3E56F1823DFD25000D1DC43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFFDE5CFB0B76AE8699624F /* Pods-SkillLaneTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
