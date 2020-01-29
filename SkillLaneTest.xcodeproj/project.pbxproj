@@ -409,7 +409,9 @@
 			baseConfigurationReference = 1CF7489650F1B5CAE3CF696D /* Pods-SkillLaneTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DC7D4L24R6;
 				INFOPLIST_FILE = "SkillLaneTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,6 +419,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gas.SkillLaneTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,7 +430,9 @@
 			baseConfigurationReference = 2CFFDE5CFB0B76AE8699624F /* Pods-SkillLaneTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DC7D4L24R6;
 				INFOPLIST_FILE = "SkillLaneTest/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,6 +440,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gas.SkillLaneTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
