@@ -70,7 +70,6 @@ class DisplayScreenViewController: UIViewController {
             self.downloadQuantityLabel.text = "\(self.viewModel!.downloadCount + Int(progress.completedUnitCount) / 1000) KB downloading"
             self.progressBar.progress = self.viewModel!.progressValue + (Float(progress.fractionCompleted) / Float(photoBookList.count))
         }.responseData { [unowned self] (response) in
-            print(MD5(self.viewModel!.photoBookList![index].photo_url!))
             guard response.result.value != nil else { return }
             
             self.viewModel!.downloadCount += response.result.value!.count / 1000
